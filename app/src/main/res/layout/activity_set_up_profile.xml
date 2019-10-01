@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetUpProfileActivity"
+    android:background="@color/learnPyLightBlue">
+
+    <LinearLayout
+        android:id="@+id/titleContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:id="@+id/set_up_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:text="Which one is most like you?"
+            android:textColor="@color/learnPyDarkBlue"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleContainer"
+        android:layout_above="@+id/continue_button"/>
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Continue"
+        android:textColor="@color/learnPyLightBlue"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonstyle"
+        />
+
+</RelativeLayout>

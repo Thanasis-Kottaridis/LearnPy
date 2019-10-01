@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayLight">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main_admin_appBar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/main_admin_collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cources_cover"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:title="Administrator">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/main_admin_toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/show_statistics_button"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/buttonstyle"
+                    android:text="Show Statistics"
+                    android:textAllCaps="false"
+                    android:textColor="@color/learnPyLightBlue" />
+
+
+                <Button
+                android:id="@+id/add_admin_button"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/show_statistics_button"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Add Admin "
+                android:textAllCaps="false"
+                android:textColor="@color/learnPyLightBlue" />
+
+                <Button
+                    android:id="@+id/go_to_firebase_button"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_admin_button"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/buttonstyle"
+                    android:text="Go To Firebase"
+                    android:textAllCaps="false"
+                    android:textColor="@color/learnPyLightBlue" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

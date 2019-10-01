@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowStatisticsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/show_statistics_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/learnPyDarkBlue"
+        app:title="Show Statistics"
+        app:titleTextColor="@color/colorBlank"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/top_users_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_statistics_toolBar"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/top_users_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="Top 3 users"
+                android:fontFamily="monospace"
+                android:textColor="@color/intro_title_color"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+            android:id="@+id/top1_user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_users_title"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="1st: USER EMAIL"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+            <TextView
+                android:id="@+id/top2_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top1_user_email"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="2nd: USER EMAIL"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/top3_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top2_user_email"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="3ed: USER EMAIL"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/most_wanted_categories_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_users_container"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/most_wanted_categories_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="Most wanted categories"
+                android:fontFamily="monospace"
+                android:textColor="@color/intro_title_color"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/most_wanted_categories_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/most_wanted_categories_title"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:text="1st: USER EMAIL"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/most_wanted_categories_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/most_wanted_categories_1"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="2nd: USER EMAIL"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/most_wanted_categories_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/most_wanted_categories_2"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="3ed: USER EMAIL"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/most_difficult_categories_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/most_wanted_categories_container"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/most_difficult_categories_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="Most difficult categories"
+                android:gravity="center"
+                android:fontFamily="monospace"
+                android:textColor="@color/intro_title_color"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/most_difficult_categories_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/most_difficult_categories_title"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:text="1st: introduction to python practice test"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/most_difficult_categories_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/most_difficult_categories_1"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="2nd: USER EMAIL"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/most_difficult_categories_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/most_difficult_categories_2"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="3ed: USER EMAIL"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

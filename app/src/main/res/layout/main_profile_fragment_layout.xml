@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayLight"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="405dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:background="@color/learnPyDarkBlue"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/user_profile_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="55dp"
+                        android:src="@drawable/student" />
+
+                    <TextView
+                        android:id="@+id/user_profile_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="User Name"
+                        android:textColor="@color/colorBlank"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="275dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:id="@+id/daily_quest_solved_container"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/daily_quest_title1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:text="Daily Quest"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/daily_quest_title2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Solved"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/daily_quest_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="15"
+                                android:textColor="@color/learnPyDarkBlue"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/courses_completed_container"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/courses_completed_title1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:text="Courses"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/courses_completed_title2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Completed"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/courses_completed_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="15"
+                                android:textColor="@color/learnPyDarkBlue"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/profile_score_container"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/profile_score_title1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:text="Profile"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/profile_score_title2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Score"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/profile_score_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:text="15"
+                                android:textColor="@color/learnPyDarkBlue"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/more_info_container"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/more_info_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More Information"
+                    android:layout_gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="@color/learnPyDarkBlue"/>
+
+                <LinearLayout
+                    android:id="@+id/daily_quest_attempts_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="25dp">
+
+                    <ImageView
+                        android:id="@+id/daily_quest_attempts_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_bullet"/>
+
+                    <TextView
+                        android:id="@+id/daily_quest_attempts_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="Daily quests attempt:"
+                        android:textSize="18sp"
+                        android:textColor="@color/learnPyDarkBlue"/>
+
+                    <TextView
+                        android:id="@+id/daily_quest_attempts_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="35dp"
+                        android:text="17"
+                        android:textSize="22sp"
+                        android:textColor="@color/learnPyDarkBlue"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/courses_started_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/courses_started_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_bullet"/>
+
+                    <TextView
+                        android:id="@+id/courses_started_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="Courses Started:"
+                        android:textSize="18sp"
+                        android:textColor="@color/learnPyDarkBlue"/>
+
+                    <TextView
+                        android:id="@+id/courses_started_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="72dp"
+                        android:text="17"
+                        android:textColor="@color/learnPyDarkBlue"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/comments_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/comments_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_bullet"/>
+
+                    <TextView
+                        android:id="@+id/comments_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="Comments:"
+                        android:textSize="18sp"
+                        android:textColor="@color/learnPyDarkBlue"/>
+
+                    <TextView
+                        android:id="@+id/comments_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="114dp"
+                        android:text="17"
+                        android:textSize="22sp"
+                        android:textColor="@color/learnPyDarkBlue"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/log_out_button"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:text="Log out"
+                android:textColor="@color/learnPyLightBlue"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonstyle"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                android:id="@+id/MoreOptionsText_LogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More options"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/learnPyDarkBlue"
+                android:layout_marginTop="25dp"/>
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+
+                    android:layout_alignRight="@+id/MoreOptionsText_LogIn"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="95dp"
+                    android:background="@color/learnPyDarkBlue" />
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/MoreOptionsText_LogIn"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="95dp"
+                    android:background="@color/learnPyDarkBlue" />
+
+                <ImageView
+                    android:id="@+id/about_us_image"
+                    android:layout_width="52dp"
+                    android:layout_height="44dp"
+                    android:layout_below="@+id/MoreOptionsText_LogIn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/ic_info" />
+                <ImageView
+                    android:id="@+id/user_statistics_image"
+                    android:layout_width="52dp"
+                    android:layout_height="44dp"
+                    android:layout_below="@+id/MoreOptionsText_LogIn"
+                    android:layout_alignRight="@+id/about_us_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginRight="100dp"
+                    android:src="@drawable/ic_progress" />
+
+                <ImageView
+                    android:id="@+id/help_Image"
+                    android:layout_width="52dp"
+                    android:layout_height="44dp"
+                    android:layout_below="@+id/MoreOptionsText_LogIn"
+                    android:layout_alignLeft="@+id/about_us_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="100dp"
+                    android:src="@drawable/ic_help" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

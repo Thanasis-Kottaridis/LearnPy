@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/admin_nav_practice"
+        android:icon="@drawable/bottom_navigation_ic_today"
+        android:title="@string/nav_practise_btn"/>
+
+    <item
+        android:id="@+id/admin_nav_courses"
+        android:icon="@drawable/bottom_navigation_ic_courses"
+        android:title="@string/nav_courses_btn"/>
+
+    <item
+        android:id="@+id/admin_nav_profile"
+        android:icon="@drawable/bottom_navigation_ic_profile"
+        android:title="@string/nav_profile_btn"/>
+    <item
+        android:id="@+id/admin_nav_admin"
+        android:icon="@drawable/bottom_nav_ic_admin"
+        android:title="@string/nav_admin_btn"/>
+</menu>

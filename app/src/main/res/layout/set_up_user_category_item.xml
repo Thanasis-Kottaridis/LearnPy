@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginBottom="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/setUpCategoryImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/amateur" />
+
+        <ImageView
+            android:id="@+id/CheckCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_check_circle" />
+
+        <TextView
+            android:id="@+id/setUpCategoryHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setUpCategoryImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Amateur Developer"
+            android:textColor="@color/intro_description_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/setUpCategoryDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setUpCategoryHeading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="te test test test test test test test test te test test test test test test test testte test test test test test test test test"
+            android:textColor="@color/colorTransparentWhite" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

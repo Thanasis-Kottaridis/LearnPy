@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Congratulations!"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:textColor="@color/intro_title_color"
+                android:textSize="30dp"
+                />
+
+            <ImageView
+                android:id="@+id/congratulations_icon"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_below="@+id/title_textView"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/quiz_complete_successfully"
+                />
+
+            <TextView
+                android:id="@+id/description_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/congratulations_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:padding="35dp"
+                android:text= "You have completed the course MPLA MPLA successfully! "
+                android:textColor="@color/colorTransparentWhite"/>
+
+            <TextView
+                android:id="@+id/score_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COURSE SCORE: 100"
+                android:textSize="30dp"
+                android:layout_below="@+id/description_textView"
+                android:layout_centerInParent="true"
+                android:textColor="@color/learnPyDarkBlue"/>
+
+            <Button
+                android:id="@+id/go_to_main_menu_button"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/score_textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Go to main menu"
+                android:textColor="@color/learnPyLightBlue"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonstyle"
+                android:layout_marginBottom="30dp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

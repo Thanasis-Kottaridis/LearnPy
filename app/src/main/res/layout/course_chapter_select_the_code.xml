@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseTitleContainer"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/showExplanation_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="35dp"
+            android:text="TEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST "
+            android:textColor="@color/learnPyDarkBlue"
+            android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/selectTheCodeToReturnTheOutput_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/showExplanation_textView"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:text="Select the code to return the output"
+                android:textColor="@color/learnPyDarkBlue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/outputToBeReturned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectTheCodeToReturnTheOutput_textView"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/learnPyDarkBlue"
+                android:padding="15dp"
+                android:text="ans1"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlank"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/selectTheCode_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/outputToBeReturned"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:text="SELECT THE CODE"
+                android:textColor="@color/learnPyDarkBlue"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/answer1_WebView_Container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/selectTheCode_textView"
+                android:padding="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/learnPyDarkBlue">
+
+                <WebView
+                    android:id="@+id/answer1_WebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/answer2_WebView"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/answer2_WebView_Container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/answer1_WebView_Container"
+                android:padding="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/learnPyDarkBlue">
+                <WebView
+                    android:id="@+id/answer2_WebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/answer2_WebView"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/answer3_WebView_Container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/answer2_WebView_Container"
+                android:padding="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/learnPyDarkBlue">
+                <WebView
+                    android:id="@+id/answer3_WebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/answer2_WebView"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/check_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer3_WebView_Container"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/learnPyYellow"
+                android:text="Check"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlank"
+                android:textSize="18sp" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

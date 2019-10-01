@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LearnPy</string>
+    <string name="nav_practise_btn">Practise</string>
+    <string name="nav_courses_btn">Courses</string>
+    <string name="nav_profile_btn">Profile</string>
+    <string name="nav_admin_btn">Admin</string>
+</resources>

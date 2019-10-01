@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/titleContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:id="@+id/learnPyLogo_LogIn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+
+                    android:src="@drawable/application_logo" />
+
+                <TextView
+                    android:id="@+id/LearnPyTitle_LogIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="monospace"
+                    android:text="LearnPy"
+                    android:textColor="@color/intro_title_color"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/EmailText_LogIn"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/titleContainer"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:drawableLeft="@drawable/ic_account_circle"
+                android:textColor="@color/learnPyDarkBlue"
+                android:textColorHint="@color/learnPyDarkBlue"
+                android:background="#11000000"
+                android:inputType="textPersonName"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/PasswordText_LogIn"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/EmailText_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="#11000000"
+                android:drawableLeft="@drawable/ic_lock"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/learnPyDarkBlue"
+                android:textColorHint="@color/learnPyDarkBlue" />
+            <Button
+                android:id="@+id/continue_button"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PasswordText_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="Log in"
+                android:textColor="@color/learnPyLightBlue"
+                android:textAllCaps="false"
+                android:background="@drawable/buttonstyle"
+                />
+            <TextView
+                android:id="@+id/AlignmentHelper_LogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/continue_button"
+                android:text="|"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/learnPyDarkBlue"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/CreateAccount_LogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/AlignmentHelper_LogIn"
+                android:layout_below="@+id/continue_button"
+                android:text="Create account"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/learnPyDarkBlue"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="16dp"/>
+            <TextView
+                android:id="@+id/ForgotPassword_LogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/AlignmentHelper_LogIn"
+                android:layout_below="@+id/continue_button"
+                android:text="Forgot Password?"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/learnPyDarkBlue"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/MoreOptionsText_LogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AlignmentHelper_LogIn"
+                android:text="More options"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/learnPyDarkBlue"
+                android:layout_marginTop="25dp"/>
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/AlignmentHelper_LogIn"
+                android:layout_alignRight="@+id/MoreOptionsText_LogIn"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="95dp"
+                android:background="@color/learnPyDarkBlue" />
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/AlignmentHelper_LogIn"
+                android:layout_alignLeft="@+id/MoreOptionsText_LogIn"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="95dp"
+                android:background="@color/learnPyDarkBlue" />
+
+            <ImageView
+                android:id="@+id/FacebookImage_LogIn"
+                android:layout_width="52dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/MoreOptionsText_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/facebook" />
+            <ImageView
+                android:id="@+id/GoogleImage_LogIn"
+                android:layout_width="52dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/MoreOptionsText_LogIn"
+                android:layout_alignRight="@+id/FacebookImage_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="100dp"
+                android:src="@drawable/google" />
+
+            <ImageView
+                android:id="@+id/InstagramImage_LogIn"
+                android:layout_width="52dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/MoreOptionsText_LogIn"
+                android:layout_alignLeft="@+id/FacebookImage_LogIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/instagram" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateTodaysChallActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/update_todays_chall_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/learnPyDarkBlue"
+        app:title="Update Today's Challenge"
+        app:titleTextColor="@color/colorBlank"/>
+
+    <TextView
+        android:id="@+id/add_challenge_chapters_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_todays_chall_toolBar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Select Courses For Today's Challenge"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="@color/intro_title_color"
+        />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_challenge_chapters_title">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/update_todays_chall_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/update_todays_chall_item"
+            android:layout_marginTop="?attr/actionBarSize"
+            />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAdminActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/add_admin_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/learnPyDarkBlue"
+        app:title="Add Admin"
+        app:titleTextColor="@color/colorBlank"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addAdminRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="50dp"
+        tools:listitem="@layout/add_admin_recycler_view_item"/>
+
+</android.support.design.widget.CoordinatorLayout>
